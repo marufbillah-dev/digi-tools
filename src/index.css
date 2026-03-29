@@ -6,4 +6,10 @@
 
 @theme {
   --font-manrope: "Manrope", sans-serif;
+  --gradient-primary: linear-gradient(to right, #4f39f6, #9514fa);
+  --text-primary: #101727;
+}
+
+@utility bg-gradient-primary {
+  background: var(--gradient-primary);
 }

@@ -1,9 +1,12 @@
 import "./App.css";
+import Navbar from "./components/common/Navbar";
 
 const App = () => {
   return (
     <div className="font-manrope">
-      <h1 className="text-9xl">Hello</h1>
+      <header>
+        <Navbar />
+      </header>
     </div>
   );
 };
