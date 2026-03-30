@@ -5,10 +5,10 @@ const Button = ({
   onClick,
   color = "",
   width = "",
+  bg = "bg-gradient-primary",
 }) => {
   const variants = {
-    primary:
-      "px-4 py-3 font-semibold text-white rounded-full bg-gradient-primary transition-all duration-300 ease-in-out hover:contrast-125 hover:hue-rotate-15",
+    primary: `px-4 py-3 font-semibold text-white rounded-full ${bg} transition-all duration-300 ease-in-out hover:contrast-125 hover:hue-rotate-15`,
     outline: "px-3.5 py-2.5 bg-white font-semibold rounded-full",
     noStyle: "px-4 py-3 font-semibold text-primary/90 rounded-full",
   };
