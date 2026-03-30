@@ -1,6 +1,7 @@
 import { Suspense, use } from "react";
 import ProductCard from "./ProductCard";
 import ProductsHeader from "./ProductsHeader";
+import Cart from "./Cart";
 
 const fetchProductsData = async () => {
   const response = await fetch("/products.json");
@@ -17,6 +18,9 @@ const Products = () => {
         <ProductsHeader />
 
         {/* Responsive Grid: 1 column on mobile, 2 on tablet, 3 on desktop */}
+        <div className="">
+          <Cart />
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           <Suspense
             fallback={
