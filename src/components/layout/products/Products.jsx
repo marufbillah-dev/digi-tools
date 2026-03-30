@@ -3,6 +3,7 @@ import ProductCard from "./ProductCard";
 import ProductsHeader from "./ProductsHeader";
 import Cart from "../Cart/Cart";
 import EmptyCart from "../Cart/EmptyCart";
+import ProductSkeleton from "./ProductSkeleton";
 
 const fetchProductsData = async () => {
   const response = await fetch("/products.json");
@@ -26,9 +27,12 @@ const Products = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           <Suspense
             fallback={
-              <p className="text-center col-span-full">
-                Loading amazing tools...
-              </p>
+              <>
+                {/* Render 6 skeleton cards while loading */}
+                {[...Array(6)].map((_, index) => (
+                  <ProductSkeleton key={index} />
+                ))}
+              </>
             }
           >
             {productsData.map((product) => (
