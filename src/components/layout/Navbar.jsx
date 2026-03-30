@@ -3,8 +3,8 @@ import Button from "../Button";
 
 const Navbar = () => {
   return (
-    <nav className=" bg-base-100 shadow-sm text-primary/90 px-4 py-1 md:py-2">
-      <div className="navbar lg:container mx-auto">
+    <nav className="fixed top-0 left-0 right-0 bg-base-100 shadow-sm text-primary/90 backdrop-blur-xl px-4 py-1 md:py-2">
+      <div className="navbar lg:container mx-auto px-0">
         {/* Start */}
         <div className="navbar-start">
           <div className="dropdown">
@@ -42,7 +42,7 @@ const Navbar = () => {
           </div>
 
           <a
-            className="text-2xl md:text-4xl text-transparent font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text cursor-pointer whitespace-nowrap p-0.5"
+            className="text-2xl md:text-4xl text-transparent font-extrabold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text cursor-pointer whitespace-nowrap py-0.5"
             href="/"
           >
             DigiTools

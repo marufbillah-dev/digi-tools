@@ -7,7 +7,7 @@ const Button = ({ text, icon = "", variant = "primary", onClick }) => {
   };
 
   const gradientBorder =
-    "p-0.5 rounded-full bg-gradient-primary transition-all duration-300 ease-in-out hover:contrast-125 hover:hue-rotate-15";
+    "p-0.5 rounded-full bg-gradient-primary transition-all duration-300 ease-in-out hover:contrast-125 hover:hue-rotate-15 w-fit mx-auto";
   const gradientText =
     "flex gap-2.5 items-center text-transparent bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text";
 
@@ -16,7 +16,7 @@ const Button = ({ text, icon = "", variant = "primary", onClick }) => {
       <button className={`${variants[variant]}`} onClick={onClick}>
         <span className={variant === "outline" ? gradientText : ""}>
           {variant === "outline" ? <img src={icon} /> : ""}
-          {icon}
+          {variant !== "outline" ? icon : ""}
           {text}
         </span>
       </button>
