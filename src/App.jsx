@@ -1,4 +1,5 @@
 import "./App.css";
+import GetStarted from "./components/layout/GetStarted";
 import Hero from "./components/layout/Hero";
 import Navbar from "./components/layout/Navbar";
 import Products from "./components/layout/products/Products";
@@ -11,7 +12,8 @@ const App = () => {
       <main>
         <Hero />
         <Stats />
-        <Products></Products>
+        <Products />
+        <GetStarted />
       </main>
     </div>
   );
