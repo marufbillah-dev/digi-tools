@@ -12,7 +12,7 @@
       "AI content suggestions",
       "Export to PDF & DOCX"
     ],
-    "icon": "FileText"
+    "icon": "https://i.ibb.co.com/pGLYC0x/document-svgrepo-com.png"
   },
   {
     "id": 2,
@@ -27,7 +27,7 @@
       "Finance tracker",
       "Minimal clean UI"
     ],
-    "icon": "LayoutDashboard"
+    "icon": "https://i.ibb.co.com/XrhsCcBk/dashboard-layout-svgrepo-com.png"
   },
   {
     "id": 3,
@@ -42,7 +42,7 @@
       "Hashtag generator",
       "Analytics tracking"
     ],
-    "icon": "Calendar"
+    "icon": "https://i.ibb.co.com/fYxtQVx3/calendar-2-svgrepo-com.png"
   },
   {
     "id": 4,
@@ -57,7 +57,7 @@
       "Dark & light themes",
       "Auto layout ready"
     ],
-    "icon": "Palette"
+    "icon": "https://i.ibb.co.com/nMdcbF0f/art-palette-svgrepo-com.png"
   },
   {
     "id": 5,
@@ -72,7 +72,7 @@
       "Download as PDF",
       "Client management"
     ],
-    "icon": "Receipt"
+    "icon": "https://i.ibb.co.com/W4s9bQzz/invoice-receipt-svgrepo-com.png"
   },
   {
     "id": 6,
@@ -87,6 +87,6 @@
       "Time tracking reports",
       "Focus analytics"
     ],
-    "icon": "Timer"
+    "icon": "https://i.ibb.co.com/jPL3pBN9/clock-svgrepo-com.png"
   }
 ]

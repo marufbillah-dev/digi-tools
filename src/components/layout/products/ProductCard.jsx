@@ -1,12 +1,4 @@
-import {
-  Check,
-  FileText,
-  LayoutDashboard,
-  Calendar,
-  Palette,
-  Receipt,
-  Timer,
-} from "lucide-react";
+import { Check } from "lucide-react";
 import Button from "../../Button";
 
 const ProductCard = ({ product }) => {
@@ -16,17 +8,7 @@ const ProductCard = ({ product }) => {
   const period = product?.period;
   const tag = product?.tag;
   const features = product?.features;
-
   const icon = product?.icon;
-  const iconMap = {
-    FileText,
-    LayoutDashboard,
-    Calendar,
-    Palette,
-    Receipt,
-    Timer,
-  };
-  const IconComponent = iconMap[icon];
 
   return (
     <div className="p-6 w-full h-full flex flex-col rounded-2xl border-2 border-gray-100 space-y-4 text-primary relative bg-white transition-hover hover:border-primary/20 hover:shadow-lg">
@@ -43,7 +25,7 @@ const ProductCard = ({ product }) => {
 
       {/* Icon */}
       <div className="p-3.5 rounded-xl border border-gray-100 w-fit bg-gray-50/50">
-        {IconComponent && <IconComponent className="w-6 h-6 text-primary " />}
+        <img src={icon} alt={name} className="w-8 h-8" />
       </div>
 
       {/* Product Name & Description */}
