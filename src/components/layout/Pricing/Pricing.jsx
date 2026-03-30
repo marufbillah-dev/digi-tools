@@ -1,5 +1,3 @@
-import { Check } from "lucide-react";
-import Button from "../../Button";
 import { Suspense, use } from "react";
 import PackageCard from "./PackageCard";
 

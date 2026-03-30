@@ -35,7 +35,12 @@ const Hero = () => {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
             <Button text={"Explore Products"} />
-            <Button icon={play} text={"Watch Demo"} variant="outline" />
+            <Button
+              icon={play}
+              text={"Watch Demo"}
+              variant="outline"
+              bg="bg-white"
+            />
           </div>
         </div>
 
