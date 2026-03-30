@@ -1,5 +1,6 @@
 import "./App.css";
 import CallToAction from "./components/layout/CallToAction";
+import Footer from "./components/layout/Footer";
 import GetStarted from "./components/layout/GetStarted";
 import Hero from "./components/layout/Hero";
 import Navbar from "./components/layout/Navbar";
@@ -19,6 +20,7 @@ const App = () => {
         <Pricing />
         <CallToAction />
       </main>
+      <Footer />
     </div>
   );
 };
