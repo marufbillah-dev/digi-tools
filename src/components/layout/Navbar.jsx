@@ -3,7 +3,7 @@ import Button from "../Button";
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-base-100 shadow-sm text-primary/90 backdrop-blur-xl px-4 py-1 md:py-2">
+    <nav className="fixed top-0 left-0 right-0 bg-white shadow-sm text-primary/90 px-4 py-1 md:py-2">
       <div className="navbar lg:container mx-auto px-0">
         {/* Start */}
         <div className="navbar-start">
