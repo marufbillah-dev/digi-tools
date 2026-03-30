@@ -7,7 +7,8 @@
 @theme {
   --font-manrope: "Manrope", sans-serif;
   --gradient-primary: linear-gradient(to right, #4f39f6, #9514fa);
-  --text-primary: #101727;
+  --color-primary: #101727;
+  --color-gray: #627382;
 }
 
 @utility bg-gradient-primary {

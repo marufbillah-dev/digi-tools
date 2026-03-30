@@ -1,0 +1,95 @@
+import { ShoppingCart, Menu } from "lucide-react";
+import Button from "../Button";
+
+const Navbar = () => {
+  return (
+    <nav className=" bg-base-100 shadow-sm text-primary/90 px-4 py-1 md:py-2">
+      <div className="navbar lg:container mx-auto">
+        {/* Start */}
+        <div className="navbar-start">
+          <div className="dropdown">
+            <div
+              tabIndex={0}
+              role="button"
+              className="btn btn-ghost lg:hidden p-0 mr-2"
+            >
+              <Menu className="h-6 w-6" />
+            </div>
+            <ul
+              tabIndex={0}
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-50 mt-3 w-52 p-2 shadow-lg"
+            >
+              <li>
+                <a href="/products">Products</a>
+              </li>
+              <li>
+                <a href="/features">Features</a>
+              </li>
+              <li>
+                <a href="/pricing">Pricing</a>
+              </li>
+              <li>
+                <a href="/testimonials">Testimonials</a>
+              </li>
+              <li>
+                <a href="/faq">FAQ</a>
+              </li>
+              <hr className="my-1 border-base-200 lg:hidden" />
+              <li className="lg:hidden">
+                <a href="/login">Login</a>
+              </li>
+            </ul>
+          </div>
+
+          <a
+            className="text-2xl md:text-4xl text-transparent font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text cursor-pointer whitespace-nowrap p-0.5"
+            href="/"
+          >
+            DigiTools
+          </a>
+        </div>
+
+        {/* Center */}
+        <div className="navbar-center hidden lg:flex">
+          <ul className="menu menu-horizontal px-1 gap-2 text-primary/90 font-semibold text-[1rem]">
+            <li className="hover:text-primary transition-colors">
+              <a href="/products">Products</a>
+            </li>
+            <li className="hover:text-primary transition-colors">
+              <a href="/features">Features</a>
+            </li>
+            <li className="hover:text-primary transition-colors">
+              <a href="/pricing">Pricing</a>
+            </li>
+            <li className="hover:text-primary transition-colors">
+              <a href="/testimonials">Testimonials</a>
+            </li>
+            <li className="hover:text-primary transition-colors">
+              <a href="/faq">FAQ</a>
+            </li>
+          </ul>
+        </div>
+
+        {/* End */}
+        <div className="navbar-end">
+          <div className="relative cursor-pointer p-2 rounded-full hover:bg-gray-100 transition-all">
+            <ShoppingCart size={22} color="#101727" />
+            <span className="absolute top-0 right-0 bg-[#4F39F6] text-white text-[10px] font-bold rounded-full w-5 h-5 flex items-center justify-center border-2 border-white">
+              0
+            </span>
+          </div>
+
+          <div className="hidden sm:block">
+            <Button text={"Login"} variant="noStyle" />
+          </div>
+
+          <div className="scale-90 md:scale-100">
+            <Button text={"Get Started"} />
+          </div>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
