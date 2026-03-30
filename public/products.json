@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "AI Resume Builder Pro",
+    "description": "Create job-winning resumes with AI-powered suggestions, modern templates, and ATS optimization.",
+    "price": 19,
+    "period": "Month",
+    "tag": "Best Seller",
+    "features": [
+      "100+ professional templates",
+      "ATS optimization",
+      "AI content suggestions",
+      "Export to PDF & DOCX"
+    ],
+    "icon": "FileText"
+  },
+  {
+    "id": 2,
+    "name": "Notion Productivity Kit",
+    "description": "All-in-one Notion workspace to manage tasks, goals, finances, and daily planning.",
+    "price": 29,
+    "period": "One-Time",
+    "tag": "Popular",
+    "features": [
+      "Task & project manager",
+      "Goal tracking dashboard",
+      "Finance tracker",
+      "Minimal clean UI"
+    ],
+    "icon": "LayoutDashboard"
+  },
+  {
+    "id": 3,
+    "name": "Social Media Content Planner",
+    "description": "Plan, organize, and schedule your social media posts with ease and consistency.",
+    "price": 12,
+    "period": "Month",
+    "tag": "New",
+    "features": [
+      "Content calendar",
+      "Post scheduling",
+      "Hashtag generator",
+      "Analytics tracking"
+    ],
+    "icon": "Calendar"
+  },
+  {
+    "id": 4,
+    "name": "UI/UX Design System Kit",
+    "description": "Speed up your design workflow with a complete UI kit for modern web and mobile apps.",
+    "price": 49,
+    "period": "One-Time",
+    "tag": "Best Seller",
+    "features": [
+      "500+ UI components",
+      "Figma & Adobe XD support",
+      "Dark & light themes",
+      "Auto layout ready"
+    ],
+    "icon": "Palette"
+  },
+  {
+    "id": 5,
+    "name": "Freelancer Invoice Generator",
+    "description": "Generate professional invoices instantly and manage your freelance finances efficiently.",
+    "price": 9,
+    "period": "Month",
+    "tag": "Popular",
+    "features": [
+      "Custom invoice templates",
+      "Auto tax calculation",
+      "Download as PDF",
+      "Client management"
+    ],
+    "icon": "Receipt"
+  },
+  {
+    "id": 6,
+    "name": "Deep Work Focus Toolkit",
+    "description": "Boost productivity with tools designed to help you focus, track time, and eliminate distractions.",
+    "price": 25,
+    "period": "Year",
+    "tag": "New",
+    "features": [
+      "Pomodoro timer",
+      "Distraction blocker",
+      "Time tracking reports",
+      "Focus analytics"
+    ],
+    "icon": "Timer"
+  }
+]
