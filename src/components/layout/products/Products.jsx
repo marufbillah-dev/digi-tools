@@ -11,20 +11,24 @@ const fetchProductsData = async () => {
 };
 const productsDataPromise = fetchProductsData();
 
-const Products = () => {
+const Products = ({ cart, setCart }) => {
   const productsData = use(productsDataPromise);
 
   // State: Toggle Bar for conditionally render ProductCard and Cart
   const [toggle, setToggle] = useState(false);
 
-  // State: Manage Cart Item
-  const [cart, setCart] = useState([]);
+  const hasItems = cart.length > 0;
 
   return (
     <section className="px-4 py-15 md:py-20 lg:py-30">
       <div className="lg:container mx-auto space-y-10">
         <ProductsHeader toggle={toggle} setToggle={setToggle} />
-        {toggle && <Cart cart={cart} />}
+        {toggle &&
+          (hasItems ? (
+            <Cart cart={cart} setCart={setCart} setToggle={setToggle} />
+          ) : (
+            <EmptyCart setToggle={setToggle} />
+          ))}
 
         {/* Responsive Grid: 1 column on mobile, 2 on tablet, 3 on desktop */}
         <div

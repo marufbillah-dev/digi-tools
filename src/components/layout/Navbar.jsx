@@ -1,7 +1,7 @@
 import { ShoppingCart, Menu } from "lucide-react";
 import Button from "../Button";
 
-const Navbar = () => {
+const Navbar = ({ cart }) => {
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white shadow-sm text-primary/90 px-4 py-1 md:py-2 z-50">
       <div className="navbar lg:container mx-auto px-0 justify-between">
@@ -76,7 +76,7 @@ const Navbar = () => {
           <div className="relative cursor-pointer p-2 md:p-3 rounded-full hover:bg-gray-100 transition-all">
             <ShoppingCart size={24} color="#101727" />
             <span className="absolute top-0 right-0 md:top-1 md:right-1 bg-[#4F39F6] text-white text-[10px] font-bold rounded-full w-5 h-5 flex items-center justify-center border-2 border-white">
-              0
+              {cart.length}
             </span>
           </div>
 

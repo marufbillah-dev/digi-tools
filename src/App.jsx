@@ -8,15 +8,19 @@ import Navbar from "./components/layout/Navbar";
 import Pricing from "./components/layout/Pricing/Pricing";
 import Products from "./components/layout/products/Products";
 import Stats from "./components/layout/Stats";
+import { useState } from "react";
 
 const App = () => {
+  // State: Manage Cart Item
+  const [cart, setCart] = useState([]);
+
   return (
     <div className="font-manrope">
-      <Navbar />
+      <Navbar cart={cart} />
       <main>
         <Hero />
         <Stats />
-        <Products />
+        <Products cart={cart} setCart={setCart} />
         <GetStarted />
         <Pricing />
         <CallToAction />

@@ -1,7 +1,7 @@
 import { ShoppingBag } from "lucide-react";
 import Button from "../../Button";
 
-const EmptyCart = () => {
+const EmptyCart = ({ setToggle }) => {
   return (
     <section className="text-primary p-8 md:p-16 rounded-2xl border-2 border-dashed border-gray-200 bg-[#F9FAFC]/50 flex flex-col items-center text-center space-y-6">
       {/* Icon */}
@@ -19,8 +19,12 @@ const EmptyCart = () => {
 
       {/* Action Button */}
       <div className="pt-2 w-full sm:w-auto">
-        <a href="/products">
-          <Button text="Browse All Products" width="w-full sm:w-auto" />
+        <a>
+          <Button
+            text="Browse All Products"
+            width="w-full sm:w-auto"
+            onClick={() => setToggle(false)}
+          />
         </a>
       </div>
 
