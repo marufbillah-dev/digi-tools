@@ -13,7 +13,7 @@ const CallToAction = () => {
           {/* Description */}
           <div className="text-white/90 leading-relaxed">
             <p>
-              Join thousands of professionals who are already using Digitools to
+              Join thousands of professionals who are already using DigiTools to
               work smarter.
             </p>
             <p>Start your free trial today.</p>
@@ -22,7 +22,7 @@ const CallToAction = () => {
 
         {/* Buttons */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-fit mx-auto">
-          <div className="">
+          <a href="#products">
             {/* Primary Action */}
             <Button
               text="Explore Products"
@@ -30,8 +30,8 @@ const CallToAction = () => {
               color="text-transparent bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text"
               width="w-full"
             />
-          </div>
-          <div className="">
+          </a>
+          <a href="#pricing">
             {/* Secondary Action */}
             <Button
               text={"View Pricing"}
@@ -41,7 +41,7 @@ const CallToAction = () => {
               variant="outline"
               width="w-full"
             />
-          </div>
+          </a>
         </div>
 
         {/* Trust Badges */}
