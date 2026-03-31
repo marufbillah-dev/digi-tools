@@ -11,7 +11,7 @@ import Stats from "./components/layout/Stats";
 import { useState } from "react";
 
 const App = () => {
-  // State: Manage Cart Item
+  // State: Manage Cart Item.
   const [cart, setCart] = useState([]);
 
   return (
