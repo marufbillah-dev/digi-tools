@@ -35,8 +35,8 @@ const Navbar = () => {
               <li>
                 <a href="/faq">FAQ</a>
               </li>
-              <hr className="my-1 border-base-200 lg:hidden" />
-              <li className="lg:hidden">
+              <hr className="my-1 border-base-200 sm:hidden" />
+              <li className="sm:hidden">
                 <a href="/login">Login</a>
               </li>
             </ul>
