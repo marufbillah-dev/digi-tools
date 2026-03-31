@@ -1,3 +1,4 @@
+import { ToastContainer } from "react-toastify";
 import "./App.css";
 import CallToAction from "./components/layout/CallToAction";
 import Footer from "./components/layout/Footer";
@@ -21,6 +22,7 @@ const App = () => {
         <CallToAction />
       </main>
       <Footer />
+      <ToastContainer />
     </div>
   );
 };

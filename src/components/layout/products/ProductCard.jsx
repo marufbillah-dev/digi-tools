@@ -1,7 +1,8 @@
 import { Check } from "lucide-react";
 import Button from "../../Button";
+import { toast } from "react-toastify";
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, cart, setCart }) => {
   const name = product?.name;
   const description = product?.description;
   const price = product?.price;
@@ -9,6 +10,14 @@ const ProductCard = ({ product }) => {
   const tag = product?.tag;
   const features = product?.features;
   const icon = product?.icon;
+
+  const handleBuyNow = () => {
+    toast.success("Added to cart");
+    const updateCart = [...cart, product];
+    setCart(updateCart);
+  };
+
+  const isCarted = cart.some((p) => p.id === product.id);
 
   return (
     <div className="p-6 w-full h-full flex flex-col rounded-2xl border-2 border-gray-100 space-y-4 text-primary relative bg-white transition-hover hover:border-primary/20 hover:shadow-lg">
@@ -59,7 +68,14 @@ const ProductCard = ({ product }) => {
 
       {/* Button */}
       <div className="pt-4">
-        <Button text={"Buy Now"} width="w-full" />
+        <Button
+          text={isCarted ? "✓ Added" : "Buy Now"}
+          width="w-full"
+          onClick={handleBuyNow}
+          variant={isCarted ? "disabled" : "primary"}
+          color={isCarted ? "text-gray-200" : "text-white"}
+          isDisabled={isCarted ? true : false}
+        />
       </div>
     </div>
   );

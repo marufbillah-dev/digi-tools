@@ -14,14 +14,17 @@ const productsDataPromise = fetchProductsData();
 const Products = () => {
   const productsData = use(productsDataPromise);
 
-  // State: Toggle Bar
+  // State: Toggle Bar for conditionally render ProductCard and Cart
   const [toggle, setToggle] = useState(false);
+
+  // State: Manage Cart Item
+  const [cart, setCart] = useState([]);
 
   return (
     <section className="px-4 py-15 md:py-20 lg:py-30">
       <div className="lg:container mx-auto space-y-10">
         <ProductsHeader toggle={toggle} setToggle={setToggle} />
-        {toggle && <Cart />}
+        {toggle && <Cart cart={cart} />}
 
         {/* Responsive Grid: 1 column on mobile, 2 on tablet, 3 on desktop */}
         <div
@@ -38,7 +41,12 @@ const Products = () => {
             }
           >
             {productsData.map((product) => (
-              <ProductCard key={product.id} product={product} />
+              <ProductCard
+                key={product.id}
+                product={product}
+                cart={cart}
+                setCart={setCart}
+              />
             ))}
           </Suspense>
         </div>

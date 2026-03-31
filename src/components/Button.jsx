@@ -7,11 +7,14 @@ const Button = ({
   width = "",
   bg = "bg-gradient-primary",
   border = "bg-gradient-primary",
+  isDisabled = false,
 }) => {
   const variants = {
     primary: `px-6 py-3 font-semibold text-white rounded-full ${bg} transition-all duration-300 ease-in-out hover:contrast-125 hover:hue-rotate-15`,
     outline: `px-5.5 py-2.5 ${bg} font-semibold rounded-full`,
     noStyle: "px-6 py-3 font-semibold text-primary/90 rounded-full",
+    disabled:
+      "px-6 py-3 font-semibold bg-gray-400 rounded-full cursor-not-allowed opacity-50",
   };
 
   const borderColor = `p-0.5 rounded-full ${border} transition-all duration-300 ease-in-out hover:contrast-125 hover:hue-rotate-15 w-fit mx-auto`;
@@ -20,7 +23,11 @@ const Button = ({
 
   return (
     <div className={`${variant === "outline" ? borderColor : ""} ${width}`}>
-      <button className={`${variants[variant]} ${width}`} onClick={onClick}>
+      <button
+        className={`${variants[variant]} ${width}`}
+        onClick={onClick}
+        disabled={isDisabled}
+      >
         <span
           className={`${variant === "outline" ? gradientText : ""} ${color}`}
         >
