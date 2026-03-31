@@ -1,8 +1,8 @@
 import { Suspense, use, useState } from "react";
 import ProductCard from "./ProductCard";
 import ProductsHeader from "./ProductsHeader";
-import Cart from "../Cart/Cart";
-import EmptyCart from "../Cart/EmptyCart";
+import Cart from "../cart/Cart";
+import EmptyCart from "../cart/EmptyCart";
 import ProductSkeleton from "./ProductSkeleton";
 
 const fetchProductsData = async () => {
@@ -21,7 +21,7 @@ const Products = ({ cart, setCart }) => {
   const hasItems = cart.length > 0;
 
   return (
-    <section className="px-4 py-15 md:py-20 lg:py-30">
+    <section className="px-4 py-15 md:py-20 lg:py-30" id="products">
       <div className="lg:container mx-auto space-y-10">
         <ProductsHeader toggle={toggle} setToggle={setToggle} />
 

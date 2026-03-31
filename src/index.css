@@ -14,3 +14,8 @@
 @utility bg-gradient-primary {
   background: var(--gradient-primary);
 }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}

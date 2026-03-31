@@ -11,7 +11,7 @@ const Pricing = () => {
   const pricingData = use(pricingDataPromise);
 
   return (
-    <section className="px-4 py-20 md:py-30">
+    <section className="px-4 py-20 md:py-30" id="pricing">
       <div className="lg:container mx-auto text-primary space-y-12">
         {/* Heading */}
         <div className="space-y-4 text-center">
