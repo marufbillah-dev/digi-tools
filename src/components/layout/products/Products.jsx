@@ -17,12 +17,15 @@ const Products = ({ cart, setCart }) => {
   // State: Toggle Bar for conditionally render ProductCard and Cart
   const [toggle, setToggle] = useState(false);
 
+  // Validation: Cart Item
   const hasItems = cart.length > 0;
 
   return (
     <section className="px-4 py-15 md:py-20 lg:py-30">
       <div className="lg:container mx-auto space-y-10">
         <ProductsHeader toggle={toggle} setToggle={setToggle} />
+
+        {/* Conditional Render for Cart and EmptyCart */}
         {toggle &&
           (hasItems ? (
             <Cart cart={cart} setCart={setCart} setToggle={setToggle} />

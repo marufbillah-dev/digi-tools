@@ -3,6 +3,7 @@ import Button from "../../Button";
 import CartItem from "./CartItem";
 
 const Cart = ({ cart, setCart, setToggle }) => {
+  // Sum of total price of carted item or items
   const totalPrice = cart.reduce((sum, product) => sum + product.price, 0);
 
   const handleCheckOut = () => {
@@ -22,7 +23,12 @@ const Cart = ({ cart, setCart, setToggle }) => {
       {/* Cart Items */}
       <div className="space-y-4">
         {cart.map((product) => (
-          <CartItem key={product.id} product={product} />
+          <CartItem
+            key={product.id}
+            product={product}
+            cart={cart}
+            setCart={setCart}
+          />
         ))}
       </div>
 

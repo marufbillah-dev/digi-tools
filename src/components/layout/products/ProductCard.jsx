@@ -17,6 +17,7 @@ const ProductCard = ({ product, cart, setCart }) => {
     setCart(updateCart);
   };
 
+  // Validation: Is the product found in the Cart or not.
   const isCarted = cart.some((p) => p.id === product.id);
 
   return (
