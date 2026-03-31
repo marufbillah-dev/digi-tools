@@ -6,11 +6,11 @@ DigiTools is a modern, responsive all-in-one digital tools platform where users 
 
 ## ⚙️ Technologies Used
 
-*⚛️ React.js
-*🎨 Tailwind CSS & DaisyUI
-*🟨 JavaScript (ES6+)
-*🔔 React Toastify (NPM Package)
-*📦 JSON (for product data)
+* ⚛️ React.js
+* 🎨 Tailwind CSS & DaisyUI
+* 🟨 JavaScript (ES6+)
+* 🔔 React Toastify (NPM Package)
+* 📦 JSON (for product data)
 
 ---
 
