@@ -1,5 +1,5 @@
 import { toast } from "react-toastify";
-import Button from "../../Button";
+import Button from "../../ui/Button";
 import CartItem from "./CartItem";
 
 const Cart = ({ cart, setCart, setToggle }) => {

@@ -1,5 +1,5 @@
 import { Check } from "lucide-react";
-import Button from "../../Button";
+import Button from "../../ui/Button";
 
 const PackageCard = ({ pricing }) => {
   const features = pricing.features;

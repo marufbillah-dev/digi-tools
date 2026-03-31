@@ -1,4 +1,4 @@
-import Button from "../Button";
+import Button from "../ui/Button";
 import play from "../../assets/Play.png";
 import bannerImg from "../../assets/banner.png";
 

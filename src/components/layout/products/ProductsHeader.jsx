@@ -1,4 +1,4 @@
-import Button from "../../Button";
+import Button from "../../ui/Button";
 
 const ProductsHeader = ({ toggle, setToggle }) => {
   return (

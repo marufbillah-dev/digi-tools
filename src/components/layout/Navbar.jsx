@@ -1,5 +1,5 @@
 import { ShoppingCart, Menu } from "lucide-react";
-import Button from "../Button";
+import Button from "../ui/Button";
 
 const Navbar = ({ cart }) => {
   return (
