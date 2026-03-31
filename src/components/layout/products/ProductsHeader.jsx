@@ -1,6 +1,6 @@
 import Button from "../../Button";
 
-const ProductsHeader = () => {
+const ProductsHeader = ({ toggle, setToggle }) => {
   return (
     <div className="space-y-4 md:space-y-6 text-center max-w-2xl mx-auto">
       {/* Heading */}
@@ -16,8 +16,19 @@ const ProductsHeader = () => {
 
       {/* Toggle Bar */}
       <div className="p-1 mx-auto rounded-full w-fit grid grid-cols-2 border border-gray-100 bg-white shadow-sm">
-        <Button text={"Products"} />
-        <Button text={`Cart`} variant="noStyle" color={"text-[#25065D]"} />
+        <Button
+          text={"Products"}
+          variant={toggle ? "noStyle" : "primary"}
+          color={toggle ? "text-[#25065D]" : "text-white"}
+          onClick={() => setToggle(false)}
+        />
+        <Button
+          text={`Cart`}
+          width="w-full"
+          variant={toggle ? "primary" : "noStyle"}
+          color={toggle ? "text-white" : "text-[#25065D]"}
+          onClick={() => setToggle(true)}
+        />
       </div>
     </div>
   );
