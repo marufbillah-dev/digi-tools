@@ -14,7 +14,7 @@ const ProductCard = ({ product }) => {
     <div className="p-6 w-full h-full flex flex-col rounded-2xl border-2 border-gray-100 space-y-4 text-primary relative bg-white transition-hover hover:border-primary/20 hover:shadow-lg">
       {/* Tag */}
       <div
-        className={`absolute top-4 right-4 px-3 py-1 rounded-full ${tag === "Best Seller" ? "bg-[#FEF3C6]" : tag === "Popular" ? "bg-[#E1E7FF]" : "bg-[#DBFCE7]"}`}
+        className={`absolute top-4 right-4 px-3 py-1 rounded-full flex items-center justify-center ${tag === "Best Seller" ? "bg-[#FEF3C6]" : tag === "Popular" ? "bg-[#E1E7FF]" : "bg-[#DBFCE7]"}`}
       >
         <span
           className={`text-xs font-bold uppercase tracking-wider ${tag === "Best Seller" ? "text-[#BB4D00]" : tag === "Popular" ? "text-transparent bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text" : "text-[#0A883E]"}`}

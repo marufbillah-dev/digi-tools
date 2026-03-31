@@ -11,8 +11,12 @@ const Hero = () => {
           <div className="space-y-4 mb-8">
             {/* Badge */}
             <div className="bg-[#E1E7FF] rounded-full py-2 px-4 w-fit max-lg:mx-auto">
-              <div className="text-sm md:text-base text-transparent font-medium bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text">
-                ▣ New: AI-Powered Tools Available
+              <div className="text-sm md:text-base flex items-center gap-2 text-transparent font-medium bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text">
+                <span className="h-4 w-4 relative flex items-center justify-center">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gradient-primary opacity-20"></span>
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-[#4F39F6]/40"></span>
+                </span>{" "}
+                New: AI-Powered Tools Available
               </div>
             </div>
 
