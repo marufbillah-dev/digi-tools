@@ -1,6 +1,6 @@
 import Button from "../../ui/Button";
 
-const ProductsHeader = ({ toggle, setToggle }) => {
+const ProductsHeader = ({ toggle, setToggle, cart }) => {
   return (
     <div className="space-y-4 md:space-y-6 text-center max-w-2xl mx-auto">
       {/* Heading */}
@@ -23,7 +23,7 @@ const ProductsHeader = ({ toggle, setToggle }) => {
           onClick={() => setToggle(false)}
         />
         <Button
-          text={`Cart`}
+          text={`Cart (${cart.length})`}
           width="w-full"
           variant={toggle ? "primary" : "noStyle"}
           color={toggle ? "text-white" : "text-[#25065D]"}

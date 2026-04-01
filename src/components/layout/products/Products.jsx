@@ -23,7 +23,7 @@ const Products = ({ cart, setCart }) => {
   return (
     <section className="px-4 py-15 md:py-20 lg:py-30" id="products">
       <div className="lg:container mx-auto space-y-10">
-        <ProductsHeader toggle={toggle} setToggle={setToggle} />
+        <ProductsHeader toggle={toggle} setToggle={setToggle} cart={cart} />
 
         {/* Conditional Render for Cart and EmptyCart */}
         {toggle &&
